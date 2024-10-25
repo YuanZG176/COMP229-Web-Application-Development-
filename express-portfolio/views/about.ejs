@@ -1,0 +1,108 @@
+<%- include('partials/header') %>
+
+    <style>
+        /* styles.css */
+
+        /* 个人介绍部分样式 */
+        .about-me {
+            max-width: 800px;
+            /* 最大宽度 */
+            margin: 40px auto;
+            /* 上下外边距，居中对齐 */
+            padding: 20px;
+            /* 内边距 */
+            background-color: #fff;
+            /* 背景颜色 */
+            border-radius: 8px;
+            /* 圆角 */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            /* 阴影效果 */
+        }
+
+        .about-me h1 {
+            text-align: center;
+            /* 标题居中 */
+            color: #333;
+            /* 标题颜色 */
+        }
+
+        .profile-photo {
+            text-align: center;
+            /* 照片居中 */
+            margin: 20px 0;
+            /* 上下外边距 */
+        }
+
+        .profile-photo img {
+            width: 150px;
+            /* 图片宽度 */
+            height: 150px;
+            /* 图片高度 */
+            border-radius: 50%;
+            /* 圆形照片 */
+            border: 2px solid #333;
+            /* 边框颜色 */
+        }
+
+        .bio {
+            line-height: 1.6;
+            /* 行高，增加可读性 */
+            color: #555;
+            /* 文字颜色 */
+            margin-bottom: 20px;
+            /* 下边距 */
+        }
+
+        .resume {
+            text-align: center;
+            /* 链接居中 */
+        }
+
+        .btn {
+            display: inline-block;
+            /* 使链接像按钮 */
+            padding: 10px 20px;
+            /* 内边距 */
+            background-color: #007bff;
+            /* 背景颜色 */
+            color: #fff;
+            /* 字体颜色 */
+            text-decoration: none;
+            /* 去掉下划线 */
+            border-radius: 4px;
+            /* 圆角 */
+            transition: background-color 0.3s;
+            /* 背景颜色过渡效果 */
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            /* 悬停时背景颜色 */
+        }
+    </style>
+    <main>
+        <section class="about-me">
+            <h1>About Me</h1>
+
+
+            <div class="profile-photo">
+                <img src="/images/mylog.jpg" alt="My profile picture" />
+            </div>
+
+            <div class="bio">
+                <p>Hello! I am Yuan Zhiguo, a software engineering student, a "full stack development engineer". I love
+                    programming and am committed to constantly improving myself. With rich project experience, I hope to
+                    continue to create valuable results for customers and teams in the future.</p>
+                <p>Over the course of my career, I have accumulated experience in several projects, including the Blue
+                    Bridge Cup Competition, Horseshoe Cup programming Competition. I believe that with the rapid
+                    development of technology, I will continue to learn and grow in this industry.</p>
+            </div>
+
+
+            <div class="resume">
+                <a href="/documents/resume.pdf" target="_blank" class="btn">Download my resume (PDF)</a>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>

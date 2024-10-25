@@ -1,0 +1,147 @@
+<%- include('partials/header') %>
+
+    <style>
+        /* styles.css */
+
+        /* 联系部分样式 */
+        .contact {
+            max-width: 800px;
+            /* 最大宽度 */
+            margin: 40px auto;
+            /* 上下外边距，居中对齐 */
+            padding: 20px;
+            /* 内边距 */
+            background-color: #fff;
+            /* 背景颜色 */
+            border-radius: 8px;
+            /* 圆角 */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            /* 阴影效果 */
+        }
+
+        .contact h1 {
+            text-align: center;
+            /* 标题居中 */
+            color: #333;
+            /* 标题颜色 */
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+            /* 下边距 */
+            line-height: 1.6;
+            /* 行高，增加可读性 */
+            color: #555;
+            /* 文字颜色 */
+        }
+
+        .contact-form {
+            margin-top: 20px;
+            /* 上边距 */
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            /* 项目间距 */
+        }
+
+        label {
+            display: block;
+            /* 标签块级显示 */
+            margin-bottom: 5px;
+            /* 下边距 */
+            color: #333;
+            /* 标签颜色 */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            /* 宽度占满 */
+            padding: 10px;
+            /* 内边距 */
+            border: 1px solid #ccc;
+            /* 边框 */
+            border-radius: 4px;
+            /* 圆角 */
+            font-size: 16px;
+            /* 字体大小 */
+        }
+
+        textarea {
+            resize: none;
+            /* 禁止调整大小 */
+        }
+
+        .btn {
+            display: inline-block;
+            /* 使按钮样式生效 */
+            padding: 10px 20px;
+            /* 内边距 */
+            background-color: #007bff;
+            /* 背景颜色 */
+            color: #fff;
+            /* 字体颜色 */
+            text-decoration: none;
+            /* 去掉下划线 */
+            border-radius: 4px;
+            /* 圆角 */
+            transition: background-color 0.3s;
+            /* 背景颜色过渡效果 */
+            border: none;
+            /* 去掉边框 */
+            cursor: pointer;
+            /* 鼠标悬停时为手形 */
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            /* 悬停时背景颜色 */
+        }
+    </style>
+    <main>
+        <section class="contact">
+            <h1>Contact us</h1>
+
+            <div class="contact-info">
+                <p>Phone：+123-456-7890</p>
+                <p>E-mail：YuanZG@Gmail.com</p>
+                <p>Address：123 RENAI Street, SuZhou, China</p>
+            </div>
+
+
+            <div class="contact-form">
+                <form action="/contact" method="POST">
+                    <div class="form-group">
+                        <label for="firstName">Name：</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Lastname：</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactNumber">Contact_Number：</label>
+                        <input type="text" id="contactNumber" name="contactNumber" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email：</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Messageg：</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>

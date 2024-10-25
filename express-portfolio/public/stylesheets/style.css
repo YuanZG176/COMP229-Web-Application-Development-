@@ -1,0 +1,267 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.about-me {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.bio {
+  margin-top: 20px;
+}
+
+.resume .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.resume .btn:hover {
+  background-color: #0056b3;
+}
+
+.contact {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form .btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+.projects {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-item {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.project-item h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.project-item p {
+  font-size: 1em;
+  color: #555;
+}
+
+
+
+
+.services {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-item {
+  width: 250px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.service-item h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.service-item p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* styles.css */
+
+/* 全局样式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  /* 背景颜色 */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  /* 主标题颜色 */
+}
+
+/* 项目部分样式 */
+.projects {
+  max-width: 1200px;
+  /* 最大宽度 */
+  margin: 20px auto;
+  /* 垂直居中 */
+  padding: 20px;
+  background-color: #fff;
+  /* 背景颜色 */
+  border-radius: 8px;
+  /* 边角圆润 */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* 阴影效果 */
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* 自适应换行 */
+  justify-content: space-between;
+  /* 项目间距 */
+}
+
+/* 单个项目项样式 */
+.project-item {
+  flex: 1 1 calc(33% - 20px);
+  /* 设置每个项目的宽度并保留间距 */
+  margin: 10px;
+  /* 项目间距 */
+  padding: 15px;
+  background-color: #f9f9f9;
+  /* 项目项背景 */
+  border-radius: 8px;
+  /* 边角圆润 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* 阴影效果 */
+  transition: transform 0.3s;
+  /* 鼠标悬停效果 */
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+  /* 鼠标悬停放大效果 */
+}
+
+.project-image {
+  max-width: 100%;
+  /* 图像自适应宽度 */
+  border-radius: 8px;
+  /* 边角圆润 */
+}
+
+/* 项目标题和描述样式 */
+.project-item h3 {
+  margin-top: 10px;
+  color: #333;
+  /* 标题颜色 */
+}
+
+.project-item p {
+  color: #555;
+  /* 描述颜色 */
+  line-height: 1.5;
+  /* 行高 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .project-item {
+    flex: 1 1 calc(50% - 20px);
+    /* 适应小屏幕 */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-item {
+    flex: 1 1 100%;
+    /* 单列显示 */
+  }
+}

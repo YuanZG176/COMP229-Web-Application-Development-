@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        /* styles.css */
+
+        /* 全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            /* 设置字体 */
+            margin: 0;
+            /* 去掉默认边距 */
+            padding: 0;
+            /* 去掉默认填充 */
+            background-color: #f4f4f4;
+            /* 背景颜色 */
+        }
+
+        /* 头部和导航栏样式 */
+        header {
+            background-color: #333;
+            /* 头部背景颜色 */
+            color: #fff;
+            /* 字体颜色 */
+            padding: 15px 20px;
+            /* 内边距 */
+        }
+
+        nav {
+            display: flex;
+            /* 使用 Flexbox 布局 */
+            align-items: center;
+            /* 垂直居中 */
+            justify-content: space-between;
+            /* 内容两边对齐 */
+        }
+
+        .logo {
+            height: 50px;
+            /* Logo 高度 */
+        }
+
+        nav ul {
+            list-style: none;
+            /* 去掉列表样式 */
+            margin: 0;
+            /* 去掉外边距 */
+            padding: 0;
+            /* 去掉内边距 */
+            display: flex;
+            /* 使用 Flexbox 布局 */
+        }
+
+        nav ul li {
+            margin-left: 20px;
+            /* 项目间距 */
+        }
+
+        nav ul li a {
+            color: #fff;
+            /* 链接颜色 */
+            text-decoration: none;
+            /* 去掉下划线 */
+            padding: 10px;
+            /* 内边距 */
+            transition: background-color 0.3s;
+            /* 背景颜色过渡效果 */
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            /* 悬停时背景颜色 */
+            border-radius: 4px;
+            /* 边角圆润 */
+        }
+
+        /* 页面标题样式 */
+        h1 {
+            text-align: center;
+            /* 居中对齐 */
+            margin: 20px 0;
+            /* 上下外边距 */
+            color: #333;
+            /* 标题颜色 */
+        }
+
+
+        /* styles.css */
+
+        /* 页脚样式 */
+        footer {
+            background-color: #333;
+            /* 页脚背景颜色 */
+            color: #fff;
+            /* 字体颜色 */
+            text-align: center;
+            /* 文本居中 */
+            padding: 20px;
+            /* 内边距 */
+            position: relative;
+            /* 使其相对于父元素定位 */
+            bottom: 0;
+            /* 在页面底部 */
+            width: 100%;
+            /* 宽度占满全屏 */
+            font-size: 14px;
+            /* 字体大小 */
+        }
+
+        footer p {
+            margin: 0;
+            /* 去掉外边距 */
+        }
+
+        /* 强调文本样式 */
+        footer b {
+            color: #ffcc00;
+            /* 加粗文本颜色 */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="/images/mylog.png" alt="My Web Logo" class="logo">
+            <ul>
+                <li><a href="/">Home page</a></li>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="/projects"> Projects page</a></li>
+                <li><a href="/services">Services page</a></li>
+                <li><a href="/contact">Contact Me </a></li>
+            </ul>
+        </nav>
+    </header>

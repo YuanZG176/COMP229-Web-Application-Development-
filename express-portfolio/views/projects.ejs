@@ -1,0 +1,143 @@
+<%- include('partials/header') %>
+
+    <style>
+        /* styles.css */
+
+        /* 项目部分样式 */
+        .projects {
+            max-width: 1200px;
+            /* 最大宽度 */
+            margin: 40px auto;
+            /* 上下外边距，居中对齐 */
+            padding: 20px;
+            /* 内边距 */
+            background-color: #f9f9f9;
+            /* 背景颜色 */
+            border-radius: 8px;
+            /* 圆角 */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            /* 阴影效果 */
+        }
+
+        .projects h1 {
+            text-align: center;
+            /* 标题居中对齐 */
+            color: #333;
+            /* 标题颜色 */
+            font-size: 2.5em;
+            /* 字体大小 */
+            margin-bottom: 30px;
+            /* 下边距 */
+        }
+
+        .project-list {
+            display: flex;
+            /* 使用弹性布局 */
+            flex-wrap: wrap;
+            /* 允许换行 */
+            justify-content: space-between;
+            /* 项目之间留出空间 */
+        }
+
+        .project-item {
+            background-color: #fff;
+            /* 项目项背景颜色 */
+            border: 1px solid #ddd;
+            /* 边框颜色 */
+            border-radius: 8px;
+            /* 圆角 */
+            margin: 10px;
+            /* 外边距 */
+            padding: 20px;
+            /* 内边距 */
+            flex: 1 1 calc(30% - 20px);
+            /* 每个项目的宽度 */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* 阴影效果 */
+            transition: transform 0.3s;
+            /* 过渡效果 */
+        }
+
+        .project-item:hover {
+            transform: scale(1.02);
+            /* 悬停时放大 */
+        }
+
+        .project-image {
+            max-width: 100%;
+            /* 图像最大宽度 */
+            height: auto;
+            /* 自动高度 */
+            border-radius: 8px;
+            /* 圆角 */
+            margin-bottom: 15px;
+            /* 下边距 */
+        }
+
+        .project-item h3 {
+            color: #007bff;
+            /* 项目标题颜色 */
+            font-size: 1.5em;
+            /* 字体大小 */
+            margin-bottom: 10px;
+            /* 下边距 */
+        }
+
+        .project-item p {
+            color: #555;
+            /* 文字颜色 */
+            font-size: 1em;
+            /* 字体大小 */
+        }
+    </style>
+    <main>
+        <section class="projects">
+            <h1>My Project</h1>
+
+            <div class="project-list">
+
+                <div class="project-item">
+                    <img src="/images/project1.jpg" alt="Project 1" class="project-image">
+                    <h3>Project 1: Development of online education platform</h3>
+                    <p>Overview: This project aims to develop an online education platform that supports real-time
+                        courses, video on demand, and interactive learning capabilities.
+
+                        Role: As a back-end development engineer, responsible for designing and implementing the core
+                        modules of the user management system, course management and payment system.
+
+                        Results: The project was successfully launched, and the platform had stable user registration
+                        and management functions, which met users' demand for efficient learning on the platform and
+                        improved user experience.</p>
+                </div>
+
+                <div class="project-item">
+                    <img src="/images/project2.jpg" alt="Project 2" class="project-image">
+                    <h3>Project 2: Mobile application performance optimization</h3>
+                    <p>Overview: This project focuses on optimizing the performance of existing mobile applications to
+                        improve their loading speed and response efficiency.
+
+                        Role: As a software optimization engineer, improve the overall application performance by
+                        refactoring code, optimizing database queries, and introducing caching mechanisms.
+
+                        Results: After completion of the project, the app load time was reduced by 30% and user
+                        retention increased by 20%, significantly improving the user experience of the app.</p>
+                </div>
+
+                <div class="project-item">
+                    <img src="/images/project3.jpg" alt="Project 3" class="project-image">
+                    <h3>Project 3: Automated test framework development</h3>
+                    <p>Overview: Develop a reusable automated testing framework for quality assurance across multiple
+                        projects within a company.
+
+                        Role: As a test engineer, responsible for framework design, functional module development, and
+                        automated implementation of test processes.
+
+                        Results: After the completion of the project, the test efficiency was increased by 50%, the
+                        manual test time was reduced, the quality of the project was guaranteed, and the overall work
+                        efficiency of the development team was improved.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>
